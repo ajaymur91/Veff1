@@ -1,0 +1,25 @@
+# This file was created Thu Sep  2 14:36:10 2021
+# Created by:
+#                  :-) GROMACS - gmx sasa, 2020.3-MODIFIED (-:
+# 
+# Executable:   /usr/local/bin/../Cellar/gromacs/2020.3/bin/gmx
+# Data prefix:  /usr/local/bin/../Cellar/gromacs/2020.3
+# Working dir:  /Users/ajaymuralidharan/Documents/Nucleation
+# Command line:
+#   gmx sasa -f 1.gro -s 1.gro -probe 0 -ndots 1024 -tv vol.xvg
+# gmx sasa is part of G R O M A C S:
+#
+# Grunge ROck MAChoS
+#
+@    title "Solvent Accessible Surface"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Area (nm\S2\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total"
+     50.000    2.043
