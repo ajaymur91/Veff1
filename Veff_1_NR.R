@@ -13,7 +13,7 @@ if (length(args)==0) {
 
 r <- 0.35             # stillinger cluster criteria
 GRO <- args[1]        # GRO file
-L <- args[2]          # Number of MC steps
+L <- as.numeric(args[2])          # Number of MC steps
 Np <- rep(NA,L)       # Record Number of particles in each MC step 
 
 ###################################################################
@@ -65,5 +65,5 @@ for(i in 1:L)
 dG <- -log((4/3)*pi*r^3) + log(Np/N)
 
 Veff <- mean(exp(-dG))
-cat(Veff)
-write.table(Y,file = "")
+cat(Veff,"\n")
+write.table(Y,file = "Y.txt",col.names = F, row.names = F)
